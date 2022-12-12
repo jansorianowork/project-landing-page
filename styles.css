@@ -9,6 +9,7 @@
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
+    box-sizing: border-box;
 }
 a{
     text-decoration: none;
@@ -32,6 +33,7 @@ a{
 .hero-secondary-text, .header-link-text{
     font-size: 18px;
     color:#F9FAF8 ;
+    margin-bottom: 20px;
 }
 
 .hero-banner{
@@ -41,7 +43,7 @@ a{
 }
 
 .hero-banner-left,.hero-banner-right{
-    margin:20px;
+    margin:20px 20px 20px 0;
     max-width: 50%;
 }
 /* .hero-banner-right{
@@ -105,10 +107,13 @@ nav{
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
+    text-align: center;
+    padding: 40px 0;
 }
 
 .quote-section-bg{
     background-color: #E5E7EB;
+    padding: 80px 0;
 }
 
 .quote-text {
@@ -116,4 +121,67 @@ nav{
     font-weight: 300;
     font-style: italic;
     color: #1F2937;
+}
+
+.quote-text-author {
+    font-weight: 900;
+    text-align: right;
+    padding-right:10%;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  
+}
+.col{
+width: 50%;
+margin: auto;
+}
+
+.card{
+    width: 50%;
+    margin: auto;
+    padding: 80px;/*  for demonstration */
+    border: solid 2px #3882F6;
+    border-radius: 10%;
+    margin-bottom: 20px;
+}
+.info-section-block p{
+    color: #1F2937;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 40px;
+
+}
+
+.cta{
+    background-color:#3882F6;
+    margin: 5%;
+    padding: 4% 8%;
+    border-radius: 10px;
+    display: flex;
+    color: #F9FAF8;
+    justify-content: space-between;
+
+}
+
+.cta-left{
+    max-width: 50%;
+}
+.cta-right .btn{
+    border-color: #F9FAF8;
+}
+
+.footer{
+    background-color: #1F2937;
+}
+
+.footer p{
+    color: #E5E7EB;
+    text-align: center;
 }
